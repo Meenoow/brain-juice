@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'dashboard/index'
   devise_for :users, path: 'auth', path_names: { sign_in: 'login', sign_out: 'logout' }
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
@@ -6,5 +7,6 @@ Rails.application.routes.draw do
   # root "articles#index"
   root "home#index"
   resources :notes
+  resources :dashboard
 
 end
