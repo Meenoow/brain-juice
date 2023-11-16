@@ -13,33 +13,58 @@
  *= require_tree .
  *= require_self
  */
- body {
+body {
   background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktNDk3XzEuanBn.jpg");
   background-repeat: no-repeat;
   background-size: cover;
- }
+}
 
- h1, 
+.content {
+  max-width: 500px;
+  margin: auto;
+}
+
+h1, 
  h2, 
  h3,
- h4 
- p, 
+ h4,
+ h5,  
  a {
   font-family: 'Gaegu', sans-serif;
   font-weight: 700;
- }
+  text-align: center;
+}
 
- a {
+a {
   text-decoration: none;
   color: cornflowerblue;
- }
+}
 
- .navbar-brand {
+p { 
   font-family: 'Gaegu', sans-serif;
-  font-weight: 700;
- }
+  font-weight: 400;
+  font-size: 30px;
+}
 
- .nav-item {
-  font-family: 'Gaegu', sans-serif;
-  font-weight: 700;
+.navbar-brand {
+font-family: 'Gaegu', sans-serif;
+font-weight: 700;
+}
+
+.nav-item {
+font-family: 'Gaegu', sans-serif;
+font-weight: 700;
+}
+
+.card {
+  margin: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
  }

@@ -1,13 +1,19 @@
 <h1>Welcome <%= @username %></h1>
+  <h2>List of all notes</h2>
 
-<h2>List of all notes</h2>
-<% @notes.each do |note| %>
-  <h4><%= link_to note.note_name, note %></h4>
-  <%# Render the partial only when the note is clicked %>
-  <% if params[:id] == note.id.to_s %>
-    <%= render partial: 'notes/show', locals: { note: note } %>
+  <% @notes.each do |note| %>
+    <div class="card" style="width: 18rem; background-color: #e3f2fd;">
+      <div class="card-body">
+        <h4><%= link_to note.note_name, note %></h4>
+        <%# Render the partial only when the note is clicked %>
+        <% if params[:id] == note.id.to_s %>
+          <%= render partial: 'notes/show', locals: { note: note } %>
+        <% end %>
+      </div>
+    </div>
   <% end %>
-<% end %>
 
-<br>
-<%= link_to 'New Note', new_note_path %>
+  <br>
+  <%= link_to new_note_path do %>
+  <button type="button" class="btn btn-outline-info btn-lg">+</button>
+  <% end %> 
