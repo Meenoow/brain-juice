@@ -13,3 +13,33 @@
  *= require_tree .
  *= require_self
  */
+ body {
+  background-image: url("https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvcm0yODMtbnVubnktNDk3XzEuanBn.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+ }
+
+ h1, 
+ h2, 
+ h3,
+ h4 
+ p, 
+ a {
+  font-family: 'Gaegu', sans-serif;
+  font-weight: 700;
+ }
+
+ a {
+  text-decoration: none;
+  color: cornflowerblue;
+ }
+
+ .navbar-brand {
+  font-family: 'Gaegu', sans-serif;
+  font-weight: 700;
+ }
+
+ .nav-item {
+  font-family: 'Gaegu', sans-serif;
+  font-weight: 700;
+ }

@@ -1,6 +1,6 @@
 <nav class="navbar navbar-light" style="background-color: #e3f2fd;">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
+    <a class="navbar-brand font-size-lg" href="/dashboard">Brain Juice</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -11,7 +11,7 @@
             <a class="nav-link active" aria-current="page" href="/dashboard">Clipboard</a> 
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/notes">New note</a> 
+            <%= link_to 'New Note', new_note_path, class: "nav-link" %>
           </li>
           <li class="nav-item">
             <%= link_to "Edit profile", edit_user_registration_path, class: "nav-link" %>
