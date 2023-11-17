@@ -1,9 +1,9 @@
 <h1>Welcome <%= @username %></h1>
-  <h2>List of all notes</h2>
+  <h2>My notes</h2>
 
   <% @notes.each do |note| %>
-    <div class="card" style="width: 18rem; background-color: #e3f2fd;">
-      <div class="card-body">
+    <div class="card rounded border-0" style="width: 18rem;">
+      <div class="card-body link-dark">
         <h4><%= link_to note.note_name, note %></h4>
         <%# Render the partial only when the note is clicked %>
         <% if params[:id] == note.id.to_s %>

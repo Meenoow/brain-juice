@@ -1,10 +1,17 @@
-<h1>
-Welcome page 
-</h1>
-<%= link_to new_user_session_path do %>
-  <button type="button" class="btn btn-info">Sign in</button>
-<% end %>
+<div class="center-container">
+  <%= image_tag('brain-juice.gif', alt: 'brain gif', class: 'custom-image') %>
+</div>
 
-<%= link_to new_user_registration_path do %>
-  <button type="button" class="btn btn-info">Sign up</button>
-<% end %>
+<div class="cntr-container">
+  <%= image_tag('brain-flow.gif', alt: 'brain juice lettering', class: 'cstm-image') %>
+</div>
+
+<div class="btn-container">
+  <%= link_to new_user_session_path do %>
+    <button type="button" class="btn btn-outline-light">Sign in</button>
+  <% end %>
+
+  <%= link_to new_user_registration_path do %>
+    <button type="button" class="btn btn-outline-light">Sign up</button>
+  <% end %>
+</div>
