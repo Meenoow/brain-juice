@@ -36,48 +36,45 @@ body {
 }
 
 h1, 
- h2, 
- h3 {
-  font-family: 'Monoton', sans-serif;
-  font-weight: 700;
-  text-align: center;
- }
-
-h4,
-h5,  
- a {
-  font-family: 'Chango', sans-serif;
+h2, 
+h3, 
+h5 {
+  font-family: 'Lilita One', serif;
   font-weight: 700;
   text-align: center;
 }
 
+h4,  
+ a {
+  font-family: 'Lilita One', sans-serif;
+  font-weight: 200;
+  text-align: center;
+}
+
+
 p { 
-  font-family: 'Comfortaa', sans-serif;
-  font-weight: 400;
-  font-size: 30px;
+  font-family: 'BioRhyme', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
 }
 
 .navbar-brand {
-  font-family: 'Monoton', sans-serif;
+  font-family: 'Lilita One', sans-serif;
   font-weight: 400;
 }
 
 .nav-item {
-  font-family: 'Chango', sans-serif;
+  font-family: 'Lilita One', sans-serif;
   font-weight: 700;
 }
 
 .card {
   margin: 20px;
+  margin-bottom: 20px;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: -8px 8px 1px rgba(0, 0, 0, 0.9); /* Adjust the shadow properties as needed */
-}
-
-.bg-success {
-  --bs-bg-opacity: 9;
-  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
+  /*box-shadow: -8px 8px 1px rgba(0, 0, 0, 0.9); /* Adjust the shadow properties as needed */
 }
 
 button {
@@ -87,8 +84,10 @@ button {
  }
 
 .btn-container {
+  font-family: 'Lilita One', sans-serif;
   text-align: center;
   margin-top: 5px;
+  margin-bottom: 30px;
 }
 
 .btn-container:before {
