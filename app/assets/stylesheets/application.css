@@ -14,7 +14,7 @@
  *= require_self
  */
 body {
-  background-image: url("https://i.pinimg.com/736x/c4/79/2b/c4792bf617c1458abb73a07414f4220b.jpg");
+  background-image: url("https://static.vecteezy.com/system/resources/previews/013/123/944/original/abstract-distorted-aesthetic-vertical-background-with-striped-waves-trendy-illustration-in-style-retro-60s-70s-vector.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -37,29 +37,34 @@ body {
 
 h1, 
  h2, 
- h3,
- h4,
- h5,  
+ h3 {
+  font-family: 'Monoton', sans-serif;
+  font-weight: 700;
+  text-align: center;
+ }
+
+h4,
+h5,  
  a {
-  font-family: 'Gaegu', sans-serif;
+  font-family: 'Chango', sans-serif;
   font-weight: 700;
   text-align: center;
 }
 
 p { 
-  font-family: 'Gaegu', sans-serif;
+  font-family: 'Comfortaa', sans-serif;
   font-weight: 400;
   font-size: 30px;
 }
 
 .navbar-brand {
-font-family: 'Gaegu', sans-serif;
-font-weight: 700;
+  font-family: 'Monoton', sans-serif;
+  font-weight: 400;
 }
 
 .nav-item {
-font-family: 'Gaegu', sans-serif;
-font-weight: 700;
+  font-family: 'Chango', sans-serif;
+  font-weight: 700;
 }
 
 .card {
@@ -67,7 +72,12 @@ font-weight: 700;
   display: block;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 6px 7px 1px rgba(0, 0, 0, 0.9); /* Adjust the shadow properties as needed */
+  box-shadow: -8px 8px 1px rgba(0, 0, 0, 0.9); /* Adjust the shadow properties as needed */
+}
+
+.bg-success {
+  --bs-bg-opacity: 9;
+  background-color: rgba(var(--bs-success-rgb), var(--bs-bg-opacity)) !important;
 }
 
 button {
