@@ -1,14 +1,26 @@
 <!-- app/views/notes/_form.html.erb -->
 
-<%= simple_form_for(@note) do |f| %>
-  <%= f.error_notification %>
+<div class="card border-0 bg-light p-2 text-dark bg-opacity-75" style="min-width: 10rem; max-width: 30rem">
+  <div class="card-body">
+    <%= simple_form_for(@note) do |f| %>
+      <%= f.error_notification %>
+      <br>
+      <div class="form-inputs">
+        <%= f.input :note_name %>
+        <br>
+        <%= f.input :content %>
+      </div>
+      <br>
 
-  <div class="form-inputs">
-    <%= f.input :note_name %>
-    <%= f.input :content %>
-  </div>
+      <div class="btn-container">
+        <div class="form-actions">
+          <%= f.button :submit, "Submit", class: "btn btn-outline-dark" %>
+        </div>
+        <%= link_to dashboard_path, class: "btn btn-outline-dark ml-2" do %>
+          Back
+        <% end %>
+      </div>
 
-  <div class="form-actions">
-    <%= f.button :submit %>
-  </div>
-<% end %>
+    <% end %>
+  </div>  
+</div>

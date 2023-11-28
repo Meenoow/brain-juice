@@ -133,3 +133,11 @@ button {
   height: auto;
   margin-bottom: 40px; /* Maintain aspect ratio */
 }
+
+.footer {
+  font-family: 'Lilita One', sans-serif;
+  color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
