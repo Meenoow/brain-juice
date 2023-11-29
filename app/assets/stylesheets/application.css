@@ -44,6 +44,14 @@ h5 {
   text-align: center;
 }
 
+.welcome {
+  font-size: 70px;
+  color: white; 
+            font-size: 70px; 
+            -webkit-text-stroke-width: 1px; 
+            -webkit-text-stroke-color: black; 
+}
+
 h4,  
  a {
   font-family: 'Lilita One', sans-serif;

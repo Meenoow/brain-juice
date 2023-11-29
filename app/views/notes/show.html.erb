@@ -1,5 +1,5 @@
 <div class="card border-0 bg-light p-2 text-dark bg-opacity-75" style="min-width: 18rem;">
-  <div class="card-header">Created on Tuesday, Nov 23 2023</div>
+   <div class="card-header">Created on <%= @note.created_at.strftime("%A, %b %d %Y") %></div>
   <div class="card-body">
     <h1 class="card-title"><%= @note.note_name %></h1>
     <p class="card-text"><%= @note.content %></p>
@@ -16,6 +16,6 @@
   </div>
 
   <div class="card-footer">
-    <small class="text-muted">Last updated 3 mins ago</small>
+    <small class="text-muted">Last updated <%= time_ago_in_words(@note.updated_at) %> ago</small>
   </div>
 </div>

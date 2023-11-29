@@ -1,7 +1,10 @@
-<h1>Welcome <%= @username %></h1>
+<h1 class="welcome">Welcome <%= @username %></h1>
 <h2>My notes</h2>
-
-
+<div class="btn-container">
+  <%= link_to new_note_path, class: "btn btn-outline-dark" do %>
+    Add a new note
+  <% end %>
+</div>
 <% @notes.each do |note| %>
   <div class="card rounded border-0 bg-dark p-2 text-white" style="width: 18rem;">
     <div class="card-body link-dark">
@@ -12,11 +15,4 @@
       <% end %>
     </div>
   </div>
-<% end %>
-
-
-<br>
-
-<%= link_to new_note_path, class: "text-white" do %>
-  <button type="button" class="btn btn-outline-info btn-lg">+</button>
 <% end %>
